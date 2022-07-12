@@ -3,7 +3,7 @@
 % Description:
 % -----------
 %
-% Calculates specificity and sharpening of PSF defiened as:
+% Calculates specificity and sharpening in a 2D PSF defiened as:
 %
 %                     |int(main lobe in a nominal voxel size)|
 %       specificity= ------------------------------------------
