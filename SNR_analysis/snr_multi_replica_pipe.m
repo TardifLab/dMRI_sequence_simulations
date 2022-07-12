@@ -4,9 +4,14 @@
 % -----------
 % 
 % Gets raw data of a scan in ISMRMRD format, coil sensitivity maps, B0
-% nonuniformity, and mask. Calculates noise covariance matrix and adds
-% noise to the raw k-space data and reconstructs image. Results will be
+% nonuniformity, and mask. Calculates noise covariance matrix, adds
+% noise to the raw k-space data, and reconstructs multiple images. Results will be
 % used in SNR calculation for multiple replica method (Robson et al., 2008).
+%
+% Requirements:
+%
+% Image reconstruction code is needed that can be found here:
+% github.com/TardifLab/ESM_image_reconstruction
 %
 % Inputs:
 % ------
@@ -16,10 +21,10 @@
 %
 %    map_adrs:  location of a .mat file containing coil sensitivity map, B0
 %               nonuniformity map, and mask for image recon
-% 
+%
+%    Nreplica: number of replicas
+%
 %    nIter: number of itterations for Conjugate Gradient (CG)
-% 
-%    vis:   turn on/off showing information about every iteration of CG
 % 
 % Outputs:
 % -------
