@@ -3,7 +3,7 @@
 % Description: 
 % -----------
 % 
-% Example for simulating dMRI sequences and calculating 2-D PSF for sequences
+% Example code for simulating dMRI sequences and calculating 2-D PSF for sequences
 % with EPI, partial Fourier EPI (PF-EPI), and spiral trajectories.
 % Calculates specificity and sharpening effect of PSFs.
 % 
