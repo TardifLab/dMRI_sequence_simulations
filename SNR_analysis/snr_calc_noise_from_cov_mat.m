@@ -3,12 +3,12 @@
 % Description:
 % -----------
 % 
-% Generates correlated noise usking noise covariance matrix of coils.
+% Generates correlated noise using noise covariance matrix of coils.
 %
 % Inputs:
 % ------
 %
-%    cov_mat: noise covariance matrix [Nnoise,Ncoil]
+%    cov_mat: noise covariance matrix [Ncoil,Ncoil]
 % 
 %    dim: dimension of generated noise [Nk,Ncoils,Ncontrasnt,Nslice]
 % 
