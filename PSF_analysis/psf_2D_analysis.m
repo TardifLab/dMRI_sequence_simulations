@@ -3,14 +3,14 @@
 % Description:
 % -----------
 %
-% calculates specificity and sharpenning of PSF. They are defiened as:
+% Calculates specificity and sharpening of PSF defiened as:
 %
 %                     |int(main lobe in a nominal voxel size)|
 %       specificity= ------------------------------------------
 %                                |int(side lobes)|
 %
 %                           |int(negative side lobes)|
-%             sharpenning= ----------------------------
+%             sharpening= ----------------------------
 %                           |int(positive side lobes)|
 %
 % Inputs:
@@ -31,7 +31,7 @@
 %
 %   specificity: specificity as defined
 %
-%   sharpenning: sharpenning as defiend
+%   sharpening: sharpening as defiend
 %
 %
 % Article: Feizollah and Tardif (2022)
@@ -40,7 +40,7 @@
 % Sajjad Feizollah, July 2022
 % -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 
-function [specificity,sharpenning]= psf_2D_analysis(params)
+function [specificity,sharpening]= psf_2D_analysis(params)
 
 fov=params.fov*1e3;
 res=params.res*1e3;
@@ -76,4 +76,4 @@ int_nom_side_lobe_pos=abs(sum(nom_side_lobe(nom_side_lobe>=0)))*(Y(2)-Y(1));
 
 
 specificity=int_nom_main_lobe./int_nom_side_lobe;
-sharpenning=int_nom_side_lobe_neg./int_nom_side_lobe_pos;
+sharpening=int_nom_side_lobe_neg./int_nom_side_lobe_pos;
