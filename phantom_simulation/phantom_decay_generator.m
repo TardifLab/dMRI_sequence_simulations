@@ -1,7 +1,9 @@
 % -_-_-_-_-_-_-_-_-_-_-_-_-_-_-phantom_decay_generator-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 %
-% Description: generates signal decay from time point vectors and tissue
-% relaxation timesfor a spin-echo sequence.
+% Description:
+% -----------
+% Generates signal decay from time vector and tissue
+% relaxation times for a spin-echo sequence.
 %
 % Input:
 %
