@@ -3,15 +3,17 @@
 % Description: 
 % -----------
 % 
-% example for simulating dMRI sequences and calculating 2-D PSF for sequences
+% Example for simulating dMRI sequences and calculating 2-D PSF for sequences
 % with EPI, partial Fourier EPI (PF-EPI), and spiral trajectories.
-% Calculates specificity and sharpenning effect of PSFs.
+% Calculates specificity and sharpening effect of PSFs.
 % 
 % toolbox/code requirements:
 % -------------------------
 % 
 % for generating spiral trajectories Brian Hargreaves implementation is needed from
 % here: mrsrl.stanford.edu/~brian/vdspiral/
+%
+% for image reconstruction requires GPU.
 % 
 % Article: Feizollah and Tardif (2022)
 % -------
@@ -58,7 +60,7 @@ for n=1:length(b_value)
                 params.PF=PF(j);
                 params.BWpp=BW(k);
                 params.b_value=b_value(n);
-                epi_wm_7T{i,j,k,n}=psf_specificity_sharpenning_pipe(params);
+                epi_wm_7T{i,j,k,n}=psf_specificity_sharpening_pipe(params);
             end
         end
     end
@@ -75,7 +77,7 @@ for n=1:length(b_value)
         params.R=R(i);
         params.PF=1;
         params.b_value=b_value(n);
-        sp_wm_7T{n,i}=psf_specificity_sharpenning_pipe(params);
+        sp_wm_7T{n,i}=psf_specificity_sharpening_pipe(params);
     end
 end
 
