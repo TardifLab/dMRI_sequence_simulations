@@ -6,6 +6,7 @@
 % relaxation times for a spin-echo sequence.
 %
 % Input:
+% -----
 %
 %     time: time vector of samples (ms) [Ntime,1]
 %
@@ -18,6 +19,7 @@
 %     TR:   sequnece repetition time in (ms)
 % 
 % Output:
+% ------
 % 
 %    signal decay:     generated signal decay   [Ntime,1]
 % 
