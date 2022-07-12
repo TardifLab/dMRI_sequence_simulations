@@ -3,7 +3,7 @@
 % Description: 
 % -----------
 % 
-% example for simulating dMRI sequences and calculating 1-D PSF and 
+% Example code for simulating dMRI sequences and calculating 1-D PSF and 
 % Full Width at Half Maximum (FWHM) in the phase encode (PE) direction
 % for sequences with EPI, partial Fourier EPI (PF-EPI), and spiral trajectories.
 % 
