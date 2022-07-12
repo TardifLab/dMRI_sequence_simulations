@@ -3,7 +3,8 @@
 % Description: 
 % -----------
 % 
-% calculates PSF and FWHM in phase-encode (PE) direction.
+% Calculates PSF in phase-encode (PE) direction and measures FWHM as the 
+% effective resolution.
 %
 % Inputs:
 % -----
@@ -29,9 +30,9 @@
 % Outputs:
 % -------
 %       
-%     FWHM: FWHM of calculated PSF
+%     FWHM: measured FWHM of PSF
 %    
-%     psf:  calculated PSF [N,1]
+%     psf:  calculated PSF in PE direction [N,1]
 % 
 %     kloc_phase:   k-space points in PE direction in (rad/m) [Nk,1]
 % 
@@ -58,6 +59,7 @@ kdata_phase=params.kdata(index_phase_enc);
 kdata_phase=kdata_phase(index_sort);
 
 % >>>>>>>>>> if PF trajecory exists fills out missing part using conjugate symetry feature <<<<<<<<<<
+
 kloc_phase_PF=[];
 kdata_phase_PF=[];
 if(~isempty(params.kloc_PF))
