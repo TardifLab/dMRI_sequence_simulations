@@ -3,20 +3,20 @@
 % Description: 
 % -----------
 % 
-% example for simulation of acuqisition and image reconstruction of a 
+% Example code for simulation of acuqisition and image reconstruction of a 
 % digital brain phantom to show T2* effects on image quality.
 % 
-% **Requires a GPU to simulate image acquisition**
+% Requirements:
+% ------------
 % 
-% toolbox/code requirements:
-% -------------------------
-% 
-% for generating spiral trajectories Brian Hargreaves implementation is needed from
+% For generating spiral trajectories Brian Hargreaves implementation is needed from
 % here: mrsrl.stanford.edu/~brian/vdspiral/
 % 
-% for image reconstruction, expanded signal model implementation is needed
-% that can be found here: 
+% For image reconstruction, expanded signal model implementation is needed
+% that can be found at: github.com/TardifLab/ESM_image_reconstruction
 % 
+% **Requires a GPU to simulate image acquisition**
+%
 % Article: Feizollah and Tardif (2022)
 % -------
 %
