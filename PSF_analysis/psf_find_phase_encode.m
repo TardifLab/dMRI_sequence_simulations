@@ -3,7 +3,7 @@
 % Description: 
 % -----------
 % 
-% extract trajectory points along phase-encode (PE) direction by finding zero
+% Extracts trajectory points along phase-encode (PE) direction by finding zero
 % crossings.
 %
 % Inputs:
