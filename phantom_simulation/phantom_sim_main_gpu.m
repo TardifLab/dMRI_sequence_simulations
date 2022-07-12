@@ -3,7 +3,7 @@
 % Description:
 % -----------
 %
-% simulates data acquisition of a digital brain phantom with three WM, GM, 
+% Simulates data acquisition of a digital brain phantom with three WM, GM, 
 % and CSF compartments. The digital phantom and coil sensitivity maps are 
 % loaded from 'phantom.mat' and 'phantom_sens.mat'.
 % 
