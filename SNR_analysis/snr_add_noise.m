@@ -3,7 +3,7 @@
 % Description:
 % -----------
 % 
-% Adds noise to raw k-space data that is correlated with coil channels.
+% Adds correlated noise with coil channels to raw k-space data using noise covariance matrix.
 %
 % Inputs:
 % ------
