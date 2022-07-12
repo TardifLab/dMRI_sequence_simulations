@@ -1,13 +1,17 @@
 % -_-_-_-_-_-_-_-_-_-_-_-_-_-_-phantom_generator-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 %
-% Description: generates a digital phantom with WM, GM, and CFS
+% Description:
+% -----------
+% Generates a digital brain phantom with WM, GM, and CFS
 % compartments.
 %
 % Input:
+% -----
 %
 %     N: matrix size for phantom
 % 
 % Output:
+% ------
 % 
 %    GM:    grey matter image [N,N]
 % 
