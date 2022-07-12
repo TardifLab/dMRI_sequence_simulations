@@ -3,7 +3,7 @@
 % Description: 
 % -----------
 % 
-% calculates 1-D inverse discrete Fourier transform using explicit matrix
+% Calculates 1-D inverse discrete Fourier transform using explicit matrix
 % multiplication.
 %
 % Inputs:
