@@ -1,8 +1,12 @@
 % -_-_-_-_-_-_-_-_-_-_-_-_-_-_-seq_sim_decay_generator-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 %
-% Description: generates signal decay from time point vectors for a spin-echo sequence
+% Description: 
+% -----------
+% 
+% Generates signal decay from time vector and tissue relaxation times for a spin-echo sequence
 %
 % Input:
+% -----
 %
 %     params:    structure with sequence parameters:
 %     
@@ -17,11 +21,13 @@
 %         params.TR:   sequnece repetition time in (ms)
 % 
 % Output:
+% ------
 % 
 %    signal decay:     generated signal decay   [Ntime,1]
 % 
 %
 % Article: Feizollah and Tardif (2022)
+% -------
 %
 % Sajjad Feizollah, July 2022
 % -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
