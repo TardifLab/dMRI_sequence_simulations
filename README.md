@@ -6,7 +6,7 @@ This MATLAB code simulates dMRI sequences with EPI and spiral trajectories and c
 
 * 2D PSF analysis and image reconstruction requires a GPU.
 
-* For image reconstruction, expanded signal model implementation is needed that can be found here: 
+* For image reconstruction, expanded signal model implementation is needed that can be found here: [github.com/TardifLab/ESM_image_reconstruction](https://github.com/TardifLab/ESM_image_reconstruction)
 
 ### PSF analysis
 #### Effective resolution
