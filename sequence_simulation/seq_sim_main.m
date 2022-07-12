@@ -3,7 +3,13 @@
 % Description:
 % -----------
 % 
-% function for simulating spin-echo Stejskal Tanner diffusion sequences.
+% Function for simulating spin-echo Stejskal Tanner diffusion sequences.
+%
+% Requirements:
+% ------------
+% 
+% for generating spiral trajectories Brian Hargreaves implementation is needed from
+% here: mrsrl.stanford.edu/~brian/vdspiral/
 %
 % Inputs:
 % ------
@@ -64,12 +70,6 @@
 %         params.TE:    the echo time in (ms)
 % 
 %         params.time_acquisition:  time vector of kloc samples in (ms) [Nk,1]
-% 
-% toolbox/code requirements:
-% -------------------------
-% 
-% for generating spiral trajectories Brian Hargreaves implementation is needed from
-% here: mrsrl.stanford.edu/~brian/vdspiral/
 %
 % Article: Feizollah and Tardif (2022)
 % -------
