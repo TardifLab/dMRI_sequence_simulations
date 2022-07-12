@@ -1,17 +1,17 @@
-% -_-_-_-_-_-_-_-_-_-_-_-_-_-_-psf_specificity_sharpenning_pipe-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+% -_-_-_-_-_-_-_-_-_-_-_-_-_-_-psf_specificity_sharpening_pipe-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 %
 % Description: 
 % -----------
 % 
-% function for simulating dMRI sequences and calculating
-% 2-D PSF. Specificity and sharpenning are measured using 2D PSFs:
+% Function for simulating dMRI sequences and calculating
+% 2-D PSF. Specificity and sharpening are measured using 2D PSFs:
 % 
 %                     |int(main lobe in a nominal voxel size)|
 %       specificity= ------------------------------------------
 %                                |int(side lobes)|
 %
 %                           |int(negative side lobes)|
-%             sharpenning= ----------------------------
+%             sharpening= ----------------------------
 %                           |int(positive side lobes)| 
 %
 % Inputs:
@@ -73,7 +73,7 @@
 % 
 %        results.specificity:   calculated specificity as described [Nres,1]
 % 
-%        results.sharpenning:   calculated sharpenning as defiened [Nres,1]
+%        results.sharpening:   calculated sharpening as defiened [Nres,1]
 % 
 % 
 %
@@ -83,7 +83,7 @@
 % Sajjad Feizollah, July 2022
 % -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 
-function results=psf_specificity_sharpenning_pipe(params)
+function results=psf_specificity_sharpening_pipe(params)
 
 n=1;
 res=params.res_max;
@@ -95,10 +95,10 @@ while(res<=params.res_min+params.res_steps)
     params.res=res;
     params=seq_sim_main(params);
     
-    % >>>>>>>>>> calculates specificity and sharpenning <<<<<<<<<<
+    % >>>>>>>>>> calculates specificity and sharpening <<<<<<<<<<
     
     params=psf_2D_IDFT_gpu(params);     
-    [results.specificity(n),results.sharpenning(n)]=psf_2D_analysis(params);
+    [results.specificity(n),results.sharpening(n)]=psf_2D_analysis(params);
     
     results.Res(n)=res*1000;
     n=n+1;
