@@ -50,10 +50,7 @@
 % 
 %        results.specificity:   specificity as defined in the article
 % 
-%        results.sharspennig:   sharpenning as defiend in the article
-%
-%
-%
+%        results.sharspennig:   sharpening as defiend in the article
 %
 % Outputs:
 % -------
@@ -65,7 +62,7 @@
 %       one-sided PSF in PE direction
 %       effective resolution vs nominal resolution
 %       specificity vs nominal resolution
-%       sharpenning vs nominal resolution
+%       sharpening vs nominal resolution
 %
 % Article: Feizollah and Tardif (2022)
 % -------
@@ -232,7 +229,7 @@ if(isfield(result{1},'FWHM'))
     set(txt,'Rotation',35);
     plot(0.5:0.1:2.8,0.5:0.1:2.8,'--','color',[0,0,0]+0.05);
     
-    % >>>>>>>>>> generates specificity and sharpenning figures <<<<<<<<<<
+    % >>>>>>>>>> generates specificity and sharpening figures <<<<<<<<<<
     
 elseif isfield(result{k},'specificity')
     
@@ -258,19 +255,19 @@ elseif isfield(result{k},'specificity')
     legend(legend_label);
     axis square
     
-    % >>>>>>>>>> sharpenning vs nominal resolution <<<<<<<<<<
+    % >>>>>>>>>> sharpening vs nominal resolution <<<<<<<<<<
     
     figure('DefaultAxesFontSize',16)
     hold on
     clear legend_label;
     for k=1:length(result)
         
-        plot(result{k}.Res,result{k}.sharpenning,'color',color{k},'LineWidth',2)
+        plot(result{k}.Res,result{k}.sharpening,'color',color{k},'LineWidth',2)
         legend_label{k}=strcat(result{k}.label,": ","R=",num2str(result{k}.R));
     end
     
     for k=1:length(result)
-        plot(result{k}.Res,result{k}.sharpenning,'w.','Marker','.','MarkerEdgeColor','k','MarkerSize',14,'LineWidth',4)
+        plot(result{k}.Res,result{k}.sharpening,'w.','Marker','.','MarkerEdgeColor','k','MarkerSize',14,'LineWidth',4)
     end
     grid on
     grid minor
