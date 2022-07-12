@@ -3,13 +3,13 @@
 % Description: 
 % -----------
 % 
-% calculated 2D IDFT using multiplication on GPU to reconstruct 2D PSF.
+% Calculates 2D inverse discrete Fourier transform (IDFT) using GPU to reconstruct 2D PSF.
 % 
-%   IMPORTANT: max_numel is selected based on GPU memory to
+%   **IMPORTANT: max_numel is selected based on GPU memory to
 %   balance between maximum number of matrix size and load on a GPU. It is
 %   different for every GPU, so please modify to achieve maximum
 %   performance. It is when the maximum power is drawn by the GPU. The value here
-%   tested for RTX3090 and Tesla V100.
+%   tested for RTX3090 and Tesla V100.**
 %
 % Inputs:
 % ------
