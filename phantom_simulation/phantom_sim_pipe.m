@@ -7,6 +7,12 @@
 % reconstructs simulated k-space with the expanded signal model
 % reconstruction.
 % 
+% Requirements:
+% ------------
+%
+% Image reconstruction code is available at: 
+% github.com/TardifLab/ESM_image_reconstruction
+% 
 % **Generating k-space data requires a GPU**
 % 
 % Inputs:
