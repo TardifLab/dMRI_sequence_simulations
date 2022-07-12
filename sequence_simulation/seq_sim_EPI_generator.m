@@ -46,10 +46,11 @@ function [kloc,time_sample,time_to_TE,sampling_rate,kloc_PF,time_sample_PF]...
 gamma=42.577478518e6;   % gyromagnetic ratio in (Hz/T)
 res=fov/N;
 kmax=1/res;
-sampling_rate=1/BW; % sampling rate
-Gmax=kmax/(gamma*N*sampling_rate);  % maximum gradient amplitude
-ramp_time=Gmax/200*1e+3; %   ramp duration
-sampling_rate=sampling_rate*1e3;
+sampling_rate=1/BW; % sampling time (s)
+Gmax=kmax/(gamma*N*sampling_rate);  % maximum gradient amplitude in (mT/m)
+SLmax=200;  % maximum slew rate in (T/m/s)
+ramp_time=Gmax/SLmax*1e+3;  % ramp duration in (ms)
+sampling_rate=sampling_rate*1e3;    % sampling time in (ms)
 
 % >>>>>>>>>> generate samples in phase- and frequency-encode directions <<<<<<<<<<
 
