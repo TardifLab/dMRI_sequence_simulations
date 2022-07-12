@@ -3,7 +3,7 @@
 % Description: 
 % -----------
 % 
-% function for simulating dMRI sequences and calculating
+% Function for simulating dMRI sequences and calculating
 % 1-D PSF and Full Width at Half Maximum (FWHM) in the phase encode
 % direction. Readout trajectory can be EPI, partial Fourier (PF) EPI and spiral.
 %
