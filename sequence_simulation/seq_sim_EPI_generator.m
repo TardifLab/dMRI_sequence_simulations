@@ -3,11 +3,11 @@
 % Description: 
 % -----------
 % 
-%   generates EPI trajectories with similar timings of an EPI used in 
-%   standard Siemens sequences.
+% Generates EPI trajectories with similar timings of an EPI used in 
+% standard Siemens sequences.
 % 
 %   ** Maximum gradient amplitude and slew rate are set to 80 mT/m and 200
-%   T/m/s. It can be changed in the code**
+%   T/m/s. Change in the code depending on your scanner limits**
 %
 % Inputs:
 % ------
