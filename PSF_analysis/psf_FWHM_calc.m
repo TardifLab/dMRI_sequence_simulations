@@ -3,7 +3,7 @@
 % Description: 
 % -----------
 % 
-% calculates Full Width at Half Maximum (FWHM) of a PSF.
+% Calculates Full Width at Half Maximum (FWHM) in a 1D PSF.
 %
 % Inputs:
 % -----
