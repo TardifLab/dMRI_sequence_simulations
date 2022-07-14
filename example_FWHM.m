@@ -50,6 +50,7 @@ for n=1:length(b_value)
     for i=1:length(R)
         for j=1:length(PF)
             for k=1:length(BW)
+                disp("Cartesian: R="+num2str(R(i))+"...PF="+num2str(PF(j))+"...BW:"+num2str(BW(k)))
                 params.traj_type='ep';
                 params.R=R(i);
                 params.PF=PF(j);
@@ -80,6 +81,7 @@ params.BWpp=1e6; % change to total bandwidth that is sampling rate
 
 for n=1:length(b_value)
     for i=1:length(R)
+        disp("Spiral: R="+num2str(R(i)))
         params.traj_type='sp';
         params.R=R(i);
         params.PF=1;
