@@ -16,7 +16,7 @@ The accuracy of spatial encoding is further characterized by measuring the speci
 ### Phantom simulation
 A digital brain phantom and coil sensitivity maps are available to simulate the image reconstruction pipeline and evaluate its impact on image quality. See ***example_phantom_sim.m*** for an example on how to use the code.
 ### SNR analysis
-Implementation of the multiple replica method [(Robson et al., 2008)](doi.org/10.1002/mrm.21728) to measure SNR of MRI scans using raw k-space data and noise measurements. ***example_multiple_replice_recon.m*** includes the steps to reconstruct the multiple replicas.
+Implementation of the multiple replica method [(Robson et al., 2008)](https://doi.org/10.1002/mrm.21728) to measure SNR of MRI scans using raw k-space data and noise measurements. ***example_multiple_replice_recon.m*** includes the steps to reconstruct the multiple replicas.
 
 
 **For any question about the code please contact: [sajjad.feizollah@mail.mcgill.ca](mailto:sajjad.feizollah@mail.mcgill.ca)**
