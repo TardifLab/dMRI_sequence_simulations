@@ -27,8 +27,8 @@ clc
 params.TR=5000; % repetition time (ms)
 params.fov=0.256;    %Field of View (m)
 params.G_max=73e-3; % maximum gradient amplitude for diffusion encoding (T/m)
-params.RF_exc_dur=5.126; % RF excitation pulse duration (ms)
-params.RF_refoc_dur=10.24;   %RF refocusing pulse duration (ms)
+params.RF_exc_dur=2.56; % RF excitation pulse duration (ms)
+params.RF_refoc_dur=6.40;   %RF refocusing pulse duration (ms)
 
 % >>>>>>>>>> set simulation parameters <<<<<<<<<<
 
