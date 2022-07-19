@@ -1,6 +1,7 @@
 # Simulation of diffusion MRI sequences and PSF analysis
 This MATLAB code simulates dMRI sequences with echo planar imaging (EPI) and spiral trajectories and characterizes the resulting point spread function (PSF).
-If it found useful for you please reference the following publication: Feizollah, S., Tardif, L. C. (2022). High-resolution diffusion-weighted imaging at 7 Tesla: single-shot readout trajectories and their impact on signal-to-noise ratio, spatial resolution and accuracy. [http://arxiv.org/abs/2207.07778](http://arxiv.org/abs/2207.07778)
+
+If used, please reference the following publication: Feizollah, S., Tardif, L. C. (2022). High-resolution diffusion-weighted imaging at 7 Tesla: single-shot readout trajectories and their impact on signal-to-noise ratio, spatial resolution and accuracy. [http://arxiv.org/abs/2207.07778](http://arxiv.org/abs/2207.07778)
 ## Requirements
 
 * The spiral trajectories are generated using Brian Hargreaves’ code, which can be found here: [mrsrl.stanford.edu/~brian/vdspiral/](http://mrsrl.stanford.edu/~brian/vdspiral/)
