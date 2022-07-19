@@ -18,6 +18,6 @@ A digital brain phantom and coil sensitivity maps are available to simulate the 
 ### SNR analysis
 Implementation of the multiple replica method [(Robson et al., 2008)](https://doi.org/10.1002/mrm.21728) to measure SNR of MRI scans using raw k-space data and noise measurements. ***example_multiple_replice_recon.m*** includes the steps to reconstruct the multiple replicas.
 
-[Feizollah, S., Tardif, C. L. (2022). *High-resolution diffusion-weighted imaging at 7 Tesla: single-shot readout trajectories and their impact on signal-to-noise ratio, spatial resolution and accuracy.*](http://arxiv.org/abs/2207.07778)
+**Reference:**[Feizollah, S., Tardif, C. L. (2022). *High-resolution diffusion-weighted imaging at 7 Tesla: single-shot readout trajectories and their impact on signal-to-noise ratio, spatial resolution and accuracy.*](http://arxiv.org/abs/2207.07778)
 
 **For any question about the code please contact: [sajjad.feizollah@mail.mcgill.ca](mailto:sajjad.feizollah@mail.mcgill.ca)**
