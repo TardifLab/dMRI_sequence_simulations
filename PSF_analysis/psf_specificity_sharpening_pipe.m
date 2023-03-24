@@ -95,6 +95,10 @@ while(res<=params.res_min+params.res_steps)
     params.res=res;
     params=seq_sim_main(params);
     
+     % >>>>>>>>>> generate k-space samples <<<<<<<<<<
+
+    params.kdata=seq_sim_decay_generator(params);
+        
     % >>>>>>>>>> calculates specificity and sharpening <<<<<<<<<<
     
     params=psf_2D_IDFT_gpu(params);     
