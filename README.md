@@ -20,6 +20,6 @@ Implementation of the multiple replica method [(Robson et al., 2008)](https://do
 
 **Reference:** [Feizollah, S., Tardif, C. L. (2022). *High-resolution diffusion-weighted imaging at 7 Tesla: single-shot readout trajectories and their impact on signal-to-noise ratio, spatial resolution and accuracy.*](https://doi.org/10.1016/j.neuroimage.2023.120159)
 
-[Link to the dataset:](https://doi.org/10.5683/SP3/V7ITEH)
+Link to the dataset: [https://doi.org/10.5683/SP3/V7ITEH ](https://doi.org/10.5683/SP3/V7ITEH)
 
 **For any question about the code please contact: [sajjad.feizollah@mail.mcgill.ca](mailto:sajjad.feizollah@mail.mcgill.ca)**
